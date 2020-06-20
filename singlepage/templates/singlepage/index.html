@@ -1,0 +1,152 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'singlepage/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIFES - Centro Universitário Faculdade de Ensino Superior</title>
+</head>
+<body>
+    <header>
+        <img  id="logo" src="{% static "singlepage/images/c2e3d227-67f9-465f-a7bd-d383a347bdc4_200x200.png" %}" alt="logo">
+        <a id="login" href="{% url 'admin:index' %}">
+            <figure>
+                <img id="login-icon" src="{% static "singlepage/images/seo-and-web.png" %}" alt="login-icon">
+                <figcaption>Login</figcaption>
+            </figure>
+        </a>
+    </header>
+
+    <div class="porque">
+        <h1>Porque graduação em Engenharia de Software no UNIFES</h1>
+        <br>
+        <p>O UNIFES tem um ambiente dinâmico, motivador, acolhedor e inovador para os apaixonados por tecnologia e que têm o espírito de “transformar o mundo”. Somos pioneiros: os primeiros a oferecer o curso de Bacharelado em Engenharia de Software do estado do Piauí. Nossa proposta de ensino e aprendizagem na área da tecnologia é totalmente inovadora. Os alunos aprendem aqui a encarar problemas tecnológicos de maneira criativa e inovadora, propondo soluções de software integradas e harmonizadas ao ambiente corporativo.</p>
+    </div>
+
+    <div class="sobre">
+        <h2>Sobre o curso</h2>
+        <br>
+        <p>O primeiro bacharelado em Engenharia de Software do Piauí tem um projeto integrado, com gatilho para aplicação prática e discussões atuais. As pesquisas desenvolvidas aqui terão possibilidades de parcerias com as gigantes Google, Facebook e Microsoft. Aceleradora de startups, coworking, pirataria de software, direitos autorais, inteligência artificial, informática médica e muitos outros temas perpassam essa formação transdisciplinar.</p>
+        <p>Nosso curso forma profissionais prontos para atuar no projeto, desenvolvimento, implantação e gerência de soluções de software de alta qualidade. Capazes de usar a tecnologia da informação para atender às rápidas mudanças no cenário das empresas. Esse profissional também está apto a introduzir melhorias nessas organizações, participando de empreendimentos de software, além de poder seguir carreira científica e tecnológica por meio de mestrado e doutorado na área.</p>
+    </div>
+
+    <div class="extrainfo">
+        <div><span>Carga horária</span>: 3.200h</div>
+        <div><span>Turno</span>: Vespertino</div>
+        <div><span>Duração</span>: 4 anos</div>
+        <div><span>Local</span>: Campus UNIFES</div>
+        <div><span>Autorização</span>: Portaria nº 300 de 27 de junho de 2019</div>
+        <div><span>Conceito MEC</span>: 4</div>
+
+        <div class="matriz">
+            <h2>Matriz curricular</h2>
+            <br>
+            <form action="{% url 'download_matriz' %}" method="post">
+                {% csrf_token %}
+
+                <button type="submit">Download Matriz</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <h2 class="diferenciais">Diferenciais</h2>
+    <div class="dif">
+        <div class="formacao">
+            <h2>Formação voltada para o meracado (empreendedorismo)</h2>
+            <br>
+            <p>Criar jogos, plataformas móveis digitais , como software médicos, são algumas possibilidades para o aluno de Tecnologia. Mas a preparação do UNIFES também foca no empreendedorismo – seja qual caminho o aluno escolha, a carreira científica e tecnológica ou o mercado de inovação, ele estará apto a atuar nela de forma empreendedora.</p>
+        </div>
+
+        <div class="incentivo">
+            <h2>Incentivo para pesquisa</h2>
+            <br>
+            <p>Nossos alunos não só estarão aptos a entrar no mercado, mas também prontos para pesquisar inovações capazes de transformar o mercado no qual estão inseridos – e quando se trata de tecnologia estamos falando de um mercado totalmente global. A Escola de Tecnologia Aplicada buscará linha de financiamento para pesquisa e suporte de grandes empresas como Facebook, Google e Microsoft. Aqui suas ideias podem mais.</p>
+        </div>
+
+        <div class="tecnologia">
+            <h2>Tecnologia aplicada</h2>
+            <br>
+            <p>O uso das tecnologias está atrelado à condição da vida moderna. Por isso a necessidade de discutir como essas mudanças afetam os campos sociais. Esta reflexão está presente nas disciplinas de seminário, com ementário livre, possibilitando discussões transversais: pirataria de software, direitos autorais, inteligência artificial, informática médica e muitos outros links com diversas áreas do conhecimento afetadas pelas novas tecnologias. Fonte: https://www.guiadacarreira.com.br/cursos/engenharia-de-software/
+                Criar sistemas e programas de computador é o trabalho básico do Engenheiro de Software. Entenda aqui como funciona o curso!
+        Os programas de computador estão cada vez mais presentes em nosso cotidiano, mas pouca gente entende a fundo com tudo isso funciona. Nesse panorama, o Engenheiro de Software detém um conhecimento muito valorizado hoje em dia.
+        Junto à criatividade, o profissional precisa aplicar uma grande capacidade de abstração para conceber, analisar e desenvolver programas adequados às necessidades das pessoas e empresas. Para isso, é importante uma boa formação.
+        Não há tanta oferta de cursos no país, mas é possível encontrar graduações muito bem avaliadas pelo Ministério da Educação (MEC), principalmente nas universidades públicas.
+        Veja agora mesmo como funciona o curso de Engenharia de Software, as matérias estudadas e opções de universidades. Conheça também alternativas de graduação na área!
+            </p>
+        </div>
+    </div>
+
+    <div class="comoe">
+        <h2>Como é o curso de Engenharia de Software?</h2>
+        <br>
+        <p>O curso de Engenharia de Software é um bacharelado com duração de cinco anos.
+            Durante a graduação, o aluno vai conhecer a fundo as técnicas e práticas de desenvolvimento de softwares e programas computacionais para uma ampla gama de aplicações em diferentes tipos de situações e dispositivos, como sistemas de informação de empresas, portais de internet, jogos digitais, telefones móveis, entre outros.
+            O crescente mercado de Tecnologia da Informação (TI) também vai exigir que o estudante formado tenha conhecimentos científicos suficientes para projetar e fazer o gerenciamento e a manutenção dos softwares.
+            O esforço durante o curso costuma valer a pena. A profissão vem se valorizando no Brasil e no mundo, e as oportunidades para os bons profissionais são muitas. Há possibilidade de altos salários, principalmente nos grandes polos tecnológicos e em empresas multinacionais.
+            Segundo a Associação Brasileira de Empresas de Software (ABES), o Brasil está em nono lugar no ranking dos maiores mercados mundiais para o software, ficando atrás somente de grandes potências como os Estados Unidos, China, Japão, Reino Unido, Alemanha, França, Canadá e Índia. Na América Latina, o Brasil é o primeiro mercado.
+        </p>
+    </div>
+
+    <div class="assuntos">
+        <h2>O que se estuda no curso de Engenharia de Software?</h2>
+        <br>
+        <p>As grades curriculares apresentam algumas variações de acordo com a faculdade. Mas, de modo geral, as principais matérias do curso de Engenharia de Software são:</p>
+        <br>
+        <ul class="course">
+            <li>Arquitetura de Software</li>
+            <li>Cálculo Diferencial e Integral</li>
+            <li>Desenvolvimento de Sistemas para Dispositivos Móveis</li>
+            <li>Desenvolvimento de Sistemas Web</li>
+            <li>Design e Interação</li>
+            <li>Engenharia de Linguagens</li>
+            <li>Estrutura de Dados</li>
+            <li>Fundamentos e Arquitetura dos Computadores</li>
+            <li>Fundamentos Matemáticos da Computação</li>
+            <li>Gerenciamento de Software</li>
+            <li>Gestão de Projetos</li>
+            <li>Introdução à Organização e Arquitetura dos Computadores</li>
+            <li>Introdução a Sistemas Operacionais</li>
+            <li>Introdução às Técnicas de Programação</li>
+            <li>Linguagem de Programação</li>
+            <li>Lógica Aplicada à Engenharia de Software</li>
+            <li>Manutenção de Software</li>
+            <li>Modelagem de Software</li>
+            <li>Planejamento e Gerenciamento de Projetos</li>
+            <li>Probabilidade</li>
+            <li>Processos de Software</li>
+            <li>Práticas de Programação</li>
+            <li>Projeto Detalhado de Software</li>
+            <li>Projetos de Interface de Usuários</li>
+            <li>Redes de Computadores</li>
+            <li>Resolução de Problemas Matemáticos para TI</li>
+            <li>Segurança e Auditoria de Sistemas</li>
+            <li>Tecnologia da Informação e Sociedade</li>
+            <li>Vetores e Geometria Analítica</li>
+        </ul>
+        <br>
+        <p>Nos últimos semestres, o curso inclui também os Estágios Supervisionados e o Trabalho de Conclusão de Curso (TCC).</p>
+    </div>
+
+    <footer>
+        {% if contato %}
+        <div class="social">
+            <figure><img src="{% static "singlepage/images/phone.svg" %}" alt=""></figure>
+            <figcaption id="phone">{{ contato.phone }}</figcaption>
+
+            <figure><img src="{% static "singlepage/images/email.svg" %}" alt=""></figure>
+            <figcaption>{{ contato.email }}</figcaption>
+
+            <figure><img src="{% static "singlepage/images/map.svg" %}" alt=""></figure>
+            <figcaption>{{ contato.address }}</figcaption>
+        </div>
+        {% endif %}
+        <div class="copyright">&copy; 2020 UNIFES. Todos os direitos reservados.</div>
+    </footer>
+    <script src="{% static "singlepage/script.js" %}"></script>
+</body>
+</html>

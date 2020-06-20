@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "YouTube Noto","Roboto","arial",sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size-adjust: none;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-variant-alternates: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-language-override: normal;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+
+    background-image: linear-gradient(to bottom, rgba(112,128,144, 0.52), rgba(0, 0, 128, 0.73)), url('images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 200px;
+    color: #fff;
+}
+
+#logo {
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 80px;
+}
+
+#login-icon {
+    width: 25px;
+    height: 25px;
+}
+
+figcaption {
+    padding-top: 5px;
+}
+
+header span {
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+}
+
+#login {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: lighter;
+}
+
+p {
+    padding-top: 10px;
+    line-height: 25px;
+    color: #222;
+}
+
+.porque {
+    padding: 30px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    opacity: 0.9;
+}
+
+.porque h1, p {
+    color: #fff;
+}
+
+.sobre {
+    padding: 30px;
+    background-color: mediumseagreen;
+    color: #fff;
+}
+
+.sobre p {
+    color: #fff;
+}
+
+.extrainfo {
+    padding: 10px;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
+.extrainfo span {
+    font-weight: bold;
+    color: green;
+}
+
+.extrainfo div {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #222;
+}
+
+.matriz {
+    padding: 30px;
+    color: #222;
+}
+
+.matriz h2 {
+    width: max-content;
+    border-bottom: 1px solid gray;
+}
+
+#materias {
+    display: none;
+}
+
+.subjects .periodo li {display:none;}
+.subjects .periodo:hover li {display:block;}
+
+li {
+    margin-left: 20px;
+}
+
+.course {
+    margin-left: 15px;
+}
+
+.diferenciais {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    background-color: gray;
+    color: #fff;
+}
+
+.dif {
+    background-image: linear-gradient(to bottom, rgba(112,128,144, 0.52), rgba(0, 0, 51, 0.73)), url('images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg');
+    background-size: cover;
+
+}
+
+.formacao {
+    padding: 30px;
+    /* background-color: #0cbaba; */
+    /* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+
+}
+
+.formacao h2, p {
+    color: #fff;
+}
+
+.incentivo {
+    padding: 30px;
+    /* background-color: teal; */
+}
+
+.incentivo h2 {
+    color: #fff;
+}
+
+.tecnologia {
+    padding: 30px;
+    /* background-image: linear-gradient(to bottom, rgba(112,128,144, 0.52), rgba(0, 0, 128, 0.73)), url('../img/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg'); */
+    /* background: url(../img/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg), linear-gradient(#eb01a5, #d13531); */
+    background-size: cover;
+}
+
+.tecnologia h2 {
+    color: #fff;
+}
+
+.comoe {
+    padding: 30px;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+}
+
+.comoe h2 {
+    color: #fff;
+}
+
+.assuntos {
+    padding: 30px;
+    background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+}
+
+.assuntos h2 {
+    font-weight: bold;
+    color: #222;
+}
+
+.assuntos p, ul {
+    color: #222;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #af8c9d;
+background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
+
+}
+
+.social, figure, figcaption {
+    padding: 7px;
+    text-align: center;
+    width: fit-content;
+}
+
+.social img {
+    width: 25px;
+}
+
+.copyright {
+    padding: 20px;
+    font-size: 13px;
+}
